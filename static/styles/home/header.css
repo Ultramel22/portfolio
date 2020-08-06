@@ -1,0 +1,71 @@
+header {
+    background-image: linear-gradient(#000000 , #2B2B2B);
+    display: grid;
+    font-family: gotham-bold;
+    grid-template-columns: 15% 10% 60% 15%;
+    height: 50px;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height:0;
+    grid-column: 2;
+}
+
+header .navlogo {
+    height: 40px;   
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 25px;
+
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav a {
+    color: #BE9788;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: color .3s linear;
+    padding-bottom: 0px;
+}
+
+header nav a:hover {
+    color: #8C5D65;
+}
+
+
+.test {
+    top: 100px;
+    border: 1px red solid;
+    height: 200px;
+    width: 1440px;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}

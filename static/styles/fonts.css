@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: butler-bold;
+    src: url("/static/fonts/butler-free-font/Butler_Bold.otf");
+}
+
+@font-face {
+    font-family: gotham-book;
+    src: url("/static/fonts/Gotham-Font/Gotham-Book.ttf");
+}
+
+@font-face {
+    font-family: gotham-bold;
+    src: url("/static/fonts/Gotham-Font/Gotham-Bold.otf");
+}
