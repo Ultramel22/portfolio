@@ -1,15 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
 
-@font-face {
-    font-family: butler-bold;
-    src: url("/static/fonts/butler-free-font/Butler_Bold.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
-@font-face {
-    font-family: gotham-book;
-    src: url("/static/fonts/Gotham-Font/Gotham-Book.ttf");
-}
 
-@font-face {
-    font-family: gotham-bold;
-    src: url("/static/fonts/Gotham-Font/Gotham-Bold.otf");
-}
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;

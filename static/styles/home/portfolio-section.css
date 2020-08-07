@@ -1,9 +1,9 @@
 .portfolio-section {
-    background-color: white;
-    height: 530px;
-    display: grid;
-    grid-template-columns: 15% 22% 26% 22% 15%;
     align-items:center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 15% 22% 490px 22% 15%;
+    height: 530px;   
 }
 
 .portfolio-section h1 {
@@ -11,30 +11,32 @@
 }
 
 .portfolio-section a {
-    text-decoration: none;
     color: #8C5D65;
+    text-decoration: none;
 }
+
 
 .portfolio-section .portfolio-intro>h1 {
     grid-column: 3;
+    margin: 20px 0 2px 0;
     text-align: center;
-    margin: 20px 0 20px 0;
 }
 
 .portfolio-section .portfolio-intro .portfolio-image {
-    height: 410px;
+   object-fit: cover;
+   width: 100%;
     
 }
 
 .portfolio-section .design-intro {
     grid-column: 2;
+    text-align: right;
 }
-
 
 .portfolio-section h1 a:hover {
     color:#6E444B;
-    transition: ease-in 0.3s;
     cursor: pointer;
+    transition: ease-in 0.3s;
 }
 
 .portfolio-section .coding-intro {

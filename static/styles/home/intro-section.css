@@ -1,24 +1,27 @@
 .intro-section {
+    align-items:center;
     background-color: #F4F4F4;
-    margin-top: 50px;
-    width: 100%;
-    height: 500px;
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
-    align-items:center;
+    height: 500px;
+    margin-top: 50px;
+    width: 100%;
+}
 
+.intro-section p {
+    width: 500px;
 }
 
 .intro-section img.intro-image {
     border-radius: 50%;
-    height:330px;
     grid-column: 2;
+    height:330px;
     justify-content: center;
     margin: 0 auto;
 }
 
 .intro-section .intro-text {
+    grid-column: 3;
     justify-content: center;
     text-align: left;
-    grid-column: 3;
 }

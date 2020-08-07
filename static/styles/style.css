@@ -14,38 +14,42 @@ body {
 }
 
 h1 {
-    font-family:butler-bold;
-    font-size: 62px;
-    margin: 0;
     color: #8C5D65;
+    font-family: 'Playfair Display', serif;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;  
 }
 
 p { 
-    font-family: gotham;
-    font-size: 18px;
-    margin: 0;
-    line-height: 23px;
     color: #4B4B4D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    margin: 0;
 }
 
 .button {
     background-color: #8C5D65;
     border: none;
+    border-radius: 5px;
     color: white;
-    padding: 6px 12px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    font-family: gotham-bold;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 2px;
     margin: 22px 105px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none; 
+    text-transform: uppercase;
 }
 
 .button:hover {
     background-color:#6E444B;
-    transition: ease-in 0.3s;
     cursor: pointer;
+    transition: ease-in 0.3s;
 }
