@@ -14,6 +14,18 @@ app.get('/about/', (req, res) => {
     res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
 });
 
+app.get('/design/', (req, res) => {
+    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+});
+
+app.get('/code/', (req, res) => {
+    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+});
+
+app.get('/contact/', (req, res) => {
+    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+});
+
 app.use("/static", express.static('static'));
 
 

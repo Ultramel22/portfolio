@@ -7,6 +7,10 @@
 
 @import url("/static/styles/home/portfolio-section.css");
 
+@import url("/static/styles/home/footer.css");
+
+@import url("/static/styles/about/header.css");
+
 body {
     margin: 0;
     padding: 0;
