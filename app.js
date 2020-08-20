@@ -2,28 +2,39 @@
 
 const express = require('express');
 const fs = require("fs");
+const expressNunjucks = require('express-nunjucks');
 
 
 const app = express();
 
+app.set('views', __dirname + '/templates');
+
+const njk = expressNunjucks(app, {
+    watch: true, 
+    noCache: true
+});
+
+
 app.get('/', (req, res) => {
-    res.status(200).send(fs.readFileSync("pages/index.html").toString()).end();
+    res.render('pages/index', {
+        test: new Date().getTime()
+    });
 });
 
 app.get('/about/', (req, res) => {
-    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+    res.render('pages/about');
 });
 
 app.get('/design/', (req, res) => {
-    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+    res.render('pages/design');
 });
 
 app.get('/code/', (req, res) => {
-    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+    res.render('pages/code');
 });
 
 app.get('/contact/', (req, res) => {
-    res.status(200).send(fs.readFileSync("pages/about.html").toString()).end();
+    res.render('pages/contact');
 });
 
 app.use("/static", express.static('static'));
