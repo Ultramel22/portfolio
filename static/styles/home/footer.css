@@ -44,7 +44,7 @@ footer .social-media-icons li a {
 }
 
 footer .social-media-icons li:hover>a svg{
-    fill: pink;
+    fill: #6E444B;
 }
 
 
@@ -55,6 +55,6 @@ footer .social-media-icons img {
 footer .social-media-icons svg {
     height: 25px;
     width: 25px;
-    fill: red;
+    fill: #BE9788;
     transition: fill .3s linear;
 }
