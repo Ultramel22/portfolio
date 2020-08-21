@@ -52,21 +52,11 @@
         <div class="instagram-section">
                 <h1> instagram feed </h1>
                 <div class="instagram-feed">
-                    <a class="instagram-image-1" href = "#">   
-                        <img src="/static/graphics/instagram-images/image1.jpg" alt="Image 1"> 
-                    </a>  
-                    <a class="instagram-image-2" href = "#">   
-                        <img src="/static/graphics/instagram-images/image2.jpg" alt="Image 2"> 
-                    </a>
-                    <a class="instagram-image-3" href = "#">   
-                        <img src="/static/graphics/instagram-images/image3.jpg" alt="Image 3"> 
-                    </a> 
-                    <a class="instagram-image-4" href = "#">   
-                        <img src="/static/graphics/instagram-images/image4.jpg" alt="Image 4"> 
-                    </a> 
-                    <a class="instagram-image-5" href = "#">   
-                        <img src="/static/graphics/instagram-images/image5.jpg" alt="Image 5"> 
-                    </a>              
+                    {% for post in instagramPosts.slice(0, 5) %}
+                        <a href="https://www.instagram.com/p/{{ post.shortcode }}/">   
+                            <img src="{{ post.thumbnail_src }}"> 
+                        </a>                                
+                    {% endfor %}
                 </div> 
                     <a href="https://www.instagram.com/melange_designs/" class="button">follow me</a>
     

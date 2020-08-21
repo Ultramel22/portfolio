@@ -3,6 +3,7 @@
 const express = require('express');
 const fs = require("fs");
 const expressNunjucks = require('express-nunjucks');
+const fetch = require('isomorphic-fetch');
 
 
 const app = express();
@@ -15,10 +16,17 @@ const njk = expressNunjucks(app, {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+
+    const instagramData = await fetch("https://www.instagram.com/melange_designs/?__a=1");
+    const instagramJSON = await instagramData.json();
+    const instagramPosts = instagramJSON.graphql.user.edge_owner_to_timeline_media.edges.map((item) => item.node);
+
     res.render('pages/index', {
+        instagramPosts,
         test: new Date().getTime()
     });
+
 });
 
 app.get('/about/', (req, res) => {
