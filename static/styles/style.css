@@ -38,6 +38,12 @@ p {
     margin: 0;
 }
 
+a.anchor{
+    position:relative;
+    visibility: hidden;
+    top:-60px;
+}
+
 .button {
     background-color: #8C5D65;
     border: none;

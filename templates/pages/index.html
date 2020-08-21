@@ -26,6 +26,7 @@
             </div>      
         </div>
 
+        <a class="anchor" id="portfolio"></a>
         <div class="portfolio-section">
             <div class="design-intro">
                 <h1>
@@ -53,7 +54,7 @@
                 <h1> instagram feed </h1>
                 <div class="instagram-feed">
                     {% for post in instagramPosts.slice(0, 5) %}
-                        <a href="https://www.instagram.com/p/{{ post.shortcode }}/">   
+                        <a href="https://www.instagram.com/p/{{ post.shortcode }}/" target="_blank">   
                             <img src="{{ post.thumbnail_src }}"> 
                         </a>                                
                     {% endfor %}
