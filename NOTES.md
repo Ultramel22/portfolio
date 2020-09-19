@@ -10,3 +10,6 @@ npm run deploy
 # run the project locally
 npm run start
 
+
+# update from git
+git pull

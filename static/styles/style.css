@@ -13,6 +13,8 @@
 
 @import url("/static/styles/about/about.css");
 
+@import url("/static/styles/designs/designs.css");
+
 body {
     display: inline-block;
     margin: 0;

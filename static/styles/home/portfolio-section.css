@@ -41,4 +41,5 @@
 
 .portfolio-section .coding-intro {
     grid-column: 4;
+    text-align: left;
 }
