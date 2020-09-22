@@ -2,22 +2,22 @@
     align-items:center;
     background-color: #F4F4F4;
     display: grid;
-    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-columns: 10% 39% 31% 20%;
     height: 500px;
     margin-top: 50px;
     width: 100%;
 }
 
 .intro-section p {
-    width: 500px;
+    width: 400px;
 }
 
 .intro-section img.intro-image {
     border-radius: 50%;
     grid-column: 2;
-    height:330px;
+    height:300px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 90px 0 auto;
 }
 
 .intro-section .intro-text {
