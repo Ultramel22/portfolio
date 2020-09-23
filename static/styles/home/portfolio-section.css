@@ -10,11 +10,10 @@
     margin-bottom: 10px;
 }
 
-.portfolio-section a {
-    color: #8C5D65;
-    text-decoration: none;
+.portfolio-section p {
+    font-size: 20px;
+    line-height: 28px;
 }
-
 
 .portfolio-section .portfolio-intro>h1 {
     grid-column: 3;
@@ -29,17 +28,10 @@
 }
 
 .portfolio-section .design-intro {
-    grid-column: 2;
-    text-align: right;
+    grid-column: 2;   
 }
 
-.portfolio-section h1 a:hover {
-    color:#6E444B;
-    cursor: pointer;
-    transition: ease-in 0.3s;
-}
 
 .portfolio-section .coding-intro {
     grid-column: 4;
-    text-align: left;
 }
