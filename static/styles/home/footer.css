@@ -2,7 +2,7 @@ footer {
     align-items: center;
     background: #000000;
     display: grid;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     grid-template-columns: 15% 35% 35% 15%;
     height: 50px;

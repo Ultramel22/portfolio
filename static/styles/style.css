@@ -7,6 +7,8 @@
 @import url("/static/styles/home/instagram-section.css");
 @import url("/static/styles/about/about.css");
 @import url("/static/styles/designs/design.css");
+@import url("/static/styles/contact/contact.css");
+@import url("/static/styles/code/code.css");
 
 body {
 
@@ -20,7 +22,7 @@ body {
 h1 {
 
     color: #8C5D65;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 62px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -39,10 +41,12 @@ p {
 
 }
 
-a.anchor{
-    position:relative;
+a.anchor {
+
+    position: relative;
     visibility: hidden;
-    top:-60px;
+    top: -60px;
+
 }
 
 .button {
@@ -65,12 +69,15 @@ a.anchor{
 }
 
 .button:hover {
-    background-color:#6E444B;
+
+    background-color: #6e444b;
     cursor: pointer;
     transition: ease-in 0.3s;
 }
 
 .content {
-    min-height: 95vh;
+
+    min-height: 94.7vh;
     text-align: center;
+    
 }

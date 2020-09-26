@@ -13,11 +13,12 @@
 .intro-text-about {
     display: inline-block;
     width: 65%;
-    text-align: center;
+    text-align: left;
 }
 
 .intro-text-about h1 {
     margin: 0 0 10px;
+    text-align: center;
 }
 
 .intro-text-about p {
