@@ -1,5 +1,5 @@
 .about { 
-    align-items:center;
+    align-items: center;
     background-color: #F4F4F4;
     display: inline-block;
     max-width: 1400px;
@@ -12,7 +12,7 @@
 
 .intro-text-about {
     display: inline-block;
-    width:65%;
+    width: 65%;
     text-align: center;
 }
 

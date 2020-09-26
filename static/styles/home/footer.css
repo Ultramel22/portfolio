@@ -22,7 +22,6 @@ footer p {
 footer .social-media-icons {
     grid-column: 3;
     text-align: right;
-
 }
 
 footer ul {
@@ -43,10 +42,9 @@ footer .social-media-icons li a {
     transition: opacity .3s linear;
 }
 
-footer .social-media-icons li:hover>a svg{
+footer .social-media-icons li:hover > a svg{
     fill: #6E444B;
 }
-
 
 footer .social-media-icons img {
     height: 25px;
