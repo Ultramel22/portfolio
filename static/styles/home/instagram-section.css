@@ -1,42 +1,47 @@
 .instagram-section {
-    align-items:center;
+
+    align-items: center;
     background-color: #F4F4F4;
-    height: 500px;
+    height: 550px;
     width: 100%;
     display: inline-block;
     text-align: center;
+
 }
 
 .instagram-section h1 {
 
-    padding: 25px 0 2px 0;
+    padding: 45px 0 2px 0;
     text-align: center;
 
 }
 
-
 .instagram-feed {
-    align-items:center;
+
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 35px;
     margin: 30px 300px 0;
+
 }
 
+.instagram-feed a {
 
-.instagram-feed a{
     display: inline-block;
+
 }
 
 .instagram-feed a img {
+
     width: 100%;
     height: 235px;
     object-fit: contain;
+
 }
 
-
-
 .instagram-section .button {
+
     margin: 45px 0 0;
 
 }

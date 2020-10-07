@@ -1,4 +1,5 @@
 header {
+
     background-image: linear-gradient(#000000 , #2B2B2B);
     display: grid;
     font-family: 'Poppins', sans-serif;
@@ -11,15 +12,18 @@ header {
     text-align: right;
     top: 0; 
     z-index: 999;
+
 }
 
 header h1 {
+
     align-items: center;
     display: flex;
     grid-column: 2;
     justify-content: flex-start;
-    line-height:0;
+    line-height: 0;
     margin: 0;   
+
 }
 
 header .navlogo {
@@ -40,25 +44,32 @@ header nav ul {
 }
 
 header nav li {
+
     display: inline-block;
     margin-left: 30px;
+
 }
 
 header nav a {
-    color: #BE9788;
+
+    color: #be9788;
     font-size: 16px;
     letter-spacing: 2px;
     padding-bottom: 0px;
     text-decoration: none;
     text-transform: uppercase;
     transition: opacity .3s linear;
+
 }
 
 header nav a:hover {
-    color: #8C5D65;
+
+    color: #8c5d65;
+
 }
 
 .test {
+
     align-content: center;
     border: 1px red solid;
     height: 200px;   
@@ -67,4 +78,5 @@ header nav a:hover {
     margin-right: auto;
     top: 100px;
     width: 1440px;
+    
 }

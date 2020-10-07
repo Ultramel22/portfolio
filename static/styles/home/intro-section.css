@@ -1,11 +1,19 @@
 .intro-section {
-    align-items:center;
-    background-color: #F4F4F4;
+
+    align-items: center;
+    background-color: #f4f4f4;
     display: grid;
-    grid-template-columns: 10% 39% 31% 20%;
-    height: 500px;
+    grid-template-columns: 10% 43% 31% 20%;
+    height: 470px;
     margin-top: 50px;
     width: 100%;
+
+}
+
+.intro-section h1 {
+
+    margin: 0 0 10px;
+
 }
 
 .intro-section p {
@@ -13,20 +21,28 @@
     font-size: 20px;
     line-height: 28px;
     width: 400px;
+
 }
 
 .intro-section img.intro-image {
 
     border-radius: 50%;
     grid-column: 2;
-    height:300px;
+    height: 320px;
     justify-content: center;
-    margin: 0 90px 0 auto;
+    margin: 0 50px 0 auto;
     
 }
 
 .intro-section .intro-text {
+
     grid-column: 3;
     justify-content: center;
     text-align: left;
+    
+}
+
+.intro-section .button {
+
+    margin: 40px 105px 0;
 }

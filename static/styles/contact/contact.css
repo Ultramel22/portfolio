@@ -5,7 +5,9 @@
 }
 
 .code-container {
+    
     padding: 210px 0 50px;
+    
 }
 
 .block {
@@ -14,7 +16,6 @@
     background-color: #f4f4f4;
     display: inline-block;
     height: 500px;
-    
     width: 100%;
     text-align: center;
 
@@ -23,6 +24,7 @@
 .block h1 {
 
     margin-top: 90px;
+
 }
 
 .block p {

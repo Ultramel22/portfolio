@@ -1,4 +1,5 @@
 footer {
+
     align-items: center;
     background: #000000;
     display: grid;
@@ -9,50 +10,67 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+
 }
 
 footer p {
+
     color: white;
     font-size: 14px;
     font-weight: 100;
     grid-column: 2;
     text-align: left;
+
 }
 
 footer .social-media-icons {
+
     grid-column: 3;
     text-align: right;
+
 }
 
 footer ul {
+
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 
 footer li {
+
     display: inline-block;
     margin-left: 15px;
     align-items: center;
+
 }
 
 footer .social-media-icons li a {
+
     align-items: center;
-    color: #BE9788;
+    color: #be9788;
     transition: opacity .3s linear;
+
 }
 
 footer .social-media-icons li:hover > a svg{
-    fill: #6E444B;
+
+    fill: #6e444b;
+
 }
 
 footer .social-media-icons img {
+
     height: 25px;
+
 }
 
 footer .social-media-icons svg {
+
     height: 25px;
     width: 25px;
-    fill: #BE9788;
+    fill: #be9788;
     transition: fill .3s linear;
+
 }
