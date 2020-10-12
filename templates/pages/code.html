@@ -1,40 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/styles/style.css">
-            <title>
-                Melanie La Grange - Code
-            </title>        
-        <link rel="shortcut icon" type="icon/ico" href="/static/images/logo_icon.svg">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">    
-    </head>
-    
-    {% include "../includes/header.html" %}
 
-    <div class="content">
-        <div class="code-content">
-            <h1> my code </h1>
-            <div class ="block-container">
-                <div class="project-block">
-                    <div class="block-1">
-                        <h3> my portfolio site </h3>
-                        <p> HTML CSS site running on Express deployed to Google App Engine </p>
-                        <a href="https://github.com/Ultramel22/portfolio" class="button" target="_blank">view on github </a>
-                    </div>
+{% extends "../index.html" %}
+
+{% block title %}Code{% endblock %}
+
+{% block content %} 
+
+    <div class="code-content">
+        <h1>my code</h1>
+        <div class ="block-container">
+            <div class="project-block">
+                <div class="block-1">
+                    <h3>my portfolio site</h3>
+                    <p>HTML CSS site running on Express deployed to Google App Engine</p>
+                    <a href="https://github.com/Ultramel22/portfolio" class="button" target="_blank">view on github</a>
                 </div>
-                <div class="project-block">
-                    <div class="block-2">
-                        <h3> future project </h3>
-                        <p> watch this space </p>
-                    </div>
+            </div>
+            <div class="project-block">
+                <div class="block-2">
+                    <h3>future project</h3>
+                    <p>watch this space</p>
                 </div>
             </div>
         </div>
     </div>
 
-    {% include "../includes/footer.html" %}
-
-</html>
+{% endblock %}

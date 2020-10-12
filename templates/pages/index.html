@@ -1,59 +1,44 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/styles/style.css">
-            <title>
-                Melanie La Grange - Portfolio
-            </title>        
-        <link rel="shortcut icon" type="icon/ico" href="/static/images/logo_icon.svg">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
-        
-    </head>
 
-    {% include "../includes/header.html" %}
+{% extends "../index.html" %}
 
-    <div class="content">
-        <div class="intro-section">
-            <img class="intro-image" src="/static/images/mel-images/intro_image.png" alt="Melanie La Grange Intro Image">
-            <div class="intro-text">
-                <h1> hi i'm Mel! </h1>
-                <p> I'm graphic designer in Cape Town transitioning to a career in web development. </p>
-                    <a href="/about/" class="button"> about me </a>
-            </div>      
+{% block content %} 
+
+    <div class="intro-section">
+        <img class="intro-image" src="/static/images/mel-images/intro_image.png" alt="Melanie La Grange Intro Image">
+        <div class="intro-text">
+            <h1>hi i'm Mel!</h1>
+            <p>I'm graphic designer in Cape Town transitioning to a career in web development.</p>
+                <a href="/about/" class="button">about me</a>
+        </div>     
+    </div>
+    <div class="portfolio-section">
+        <div class="portfolio-intro">
+            <h1>my portfolio</h1>
         </div>
-        <div class="portfolio-section">
-            <div class="portfolio-intro">
-                <h1> my portfolio </h1>
+        <div class="paths">         
+            <div class="design-intro">
+                <h1>design</h1>                                                            
+                <p>I've worked as a print and signage designer for 5 years.</p>
+                <a href="/design/" class="button">my designs</a>
             </div>
-            <div class="paths">          
-                <div class="design-intro">
-                    <h1>design</h1>                                                             
-                    <p> I've worked as a print and signage designer for 5 years. </p>
-                    <a href="/design/" class="button"> my designs </a>
-                </div>
-                <div class="coding-intro"> 
-                    <h1> code </h1>                                                                                
-                    <p> I'm still learning to code. So far I've learned the basics of HTML and CSS. </p>
-                    <a href="/code/" class="button"> my code </a>    
-                </div>
+            <div class="coding-intro">
+                <h1>code</h1>                                                                               
+                <p>I'm still learning to code. So far I've learned the basics of HTML and CSS.</p>
+                <a href="/code/" class="button">my code</a>   
             </div>
-        </div>
-        <div class="instagram-section">
-            <h1> instagram feed </h1>
-            <div class="instagram-feed">
-                {% for post in instagramPosts.slice(0, 5) %}
-                    <a href="https://www.instagram.com/p/{{ post.shortcode }}/" target="_blank">   
-                        <img src="{{ post.thumbnail_src }}"> 
-                    </a>                                
-                {% endfor %}
-            </div> 
-            <a href="https://www.instagram.com/melange_designs/" class="button"> follow me </a>
         </div>
     </div>
+    <div class="instagram-section">
+        <h1>instagram feed</h1>
+        <div class="instagram-feed">
+            {% for post in instagramPosts.slice(0, 5) %}
+                <a href="https://www.instagram.com/p/{{ post.shortcode }}/" target="_blank">  
+                    <img src="{{ post.thumbnail_src }}">
+                </a>                               
+            {% endfor %}
+        </div>
+        <a href="https://www.instagram.com/melange_designs/" class="button">follow me</a>
+    </div>
 
-    {% include "../includes/footer.html" %}
+{% endblock %}
 
-</html>

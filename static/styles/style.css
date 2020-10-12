@@ -11,6 +11,16 @@
 @import url("/static/styles/code/code.css");
 @import url("/static/styles/resume/resume.css");
 
+* {
+
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
 body {
 
     display: inline-block;

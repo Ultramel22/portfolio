@@ -1,53 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/styles/style.css">
-            <title>
-                Melanie La Grange - About
-            </title>        
-        <link rel="shortcut icon" type="icon/ico" href="/static/images/logo_icon.svg">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">        
-    </head>
-    
-    {% include "../includes/header.html" %}
 
-    <div class="content">
-        <div class="about">
-            <div class="image-container">
-                <div class="color-block">
-                </div>
-                <!--img class="about-photo" src="/static/images/mel-images/about_me_image.png" alt="Portfolio Image"-->
+{% extends "../index.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %} 
+
+    <div class="about">
+        <div class="image-container">
+            <div class="color-block">
             </div>
-            <div class="intro-text-about">
-                <h1> a little bit about me... </h1>
-                <p> I'm currently a graphic designer at Ultra Signs in Cape Town. </p>
-                <p> I've always been a passionate creator and problem solver. During the lockdown I
-                    started learning HTML, CSS and JavaScript and loved it. I've found a new calling
-                    blending my design skills with programming to create beautiful web experiences.
-                    I know I have a long way to go and many things to learn, but I'm committed to a 
-                    lifetime of learning the skills I'll need to become a full stack web developer.
-                </p>
-                <p>
-                    In the past, I used my free time on drawing and illustration. These days I'm spending
-                    it learning to code and working on this portfolio. 
-                </p>
-                <p>
-                    My current goal is to land a job as a junior web developer so I can spend all my
-                    time learning and creating. 
-                </p>
-            </div>
-            <div>
-            <a href="/design/" class="button">my designs </a>
-            <a href="/resume/" class="button" target="blank">My RÉsumÉ </a>
-            <a href="/code/" class="button">my code </a>
-            </div>
+            <!--img class="about-photo" src="/static/images/mel-images/about_me_image.png" alt="Portfolio Image"-->
+        </div>
+        <div class="intro-text-about">
+            <h1>a little bit about me... </h1>
+            <p>I'm currently a graphic designer at Ultra Signs in Cape Town. </p>
+            <p>I've always been a passionate creator and problem solver. During the lockdown I
+                started learning HTML, CSS and JavaScript and loved it. I've found a new calling
+                blending my design skills with programming to create beautiful web experiences.
+                I know I have a long way to go and many things to learn, but I'm committed to a 
+                lifetime of learning the skills I'll need to become a full stack web developer.
+            </p>
+            <p>
+                In the past, I used my free time on drawing and illustration. These days I'm spending
+                it learning to code and working on this portfolio. 
+            </p>
+            <p>
+                My current goal is to land a job as a junior web developer so I can spend all my
+                time learning and creating. 
+            </p>
+        </div>
+        <div>
+        <a href="/design/" class="button">my designs</a>
+        <a href="/resume/" class="button" target="blank">My Resume</a>
+        <a href="/code/" class="button">my code</a>
         </div>
     </div>
 
-
-    {% include "../includes/footer.html" %}
-
-</html>
+{% endblock %}

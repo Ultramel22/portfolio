@@ -1,27 +1,125 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/static/styles/style.css">
-            <title>
-                Melanie La Grange - Code
-            </title>        
-        <link rel="shortcut icon" type="icon/ico" href="/static/images/logo_icon.svg">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
-        
-    </head>
-    
-    {% include "../includes/header.html" %}
 
-    <div class="content">
+{% extends "../index.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block content %} 
+
+    <div class="resume-container">
+        <div class="resume">
+            <div class="left-section">
+                <div class="photo">
+                    <img src="/static/images/mel-images/resume-photo.jpg" alt="Melanie La Grange Photo">
+                </div>
+                <div class="resume-content">
+                
+                    <div class="personal-info">
+                        <h5>PERSONAL INFORMATION</h5>
+                        <div class="info-grid">
+                            <div class="info-left">
+                                <p>Nationality: </p>
+                                
+                                <p>DOB</p>
+                                <p>Marital Status: </p>
+                                <p>Languages: </p>
+                            </div>
+
+                            <div class="info-right">
+                                <p>South African</p>
+                            
+                                <p> </p>
+                                <p>Single</p>
+                                <p>English (1st) </p>
+                                <p>Afrikaans (2nd) </p>
+                            </div>
 
 
+                            
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h5>EDUCATION</h5>
+                        <p>Sololearn</br>
+                            html & css</br>
+                            2020
+                        </p>
+
+                        <p>shaw academy</br>
+                            introduction to</br>
+                            graphic design</br>
+                            2016
+                        </p>
+
+                        <p>uct short course</br>
+                            graphic design</br>
+                            2015
+                        </p>
+
+                        <p>city varsity</br>
+                            professional acting</br>
+                            for camera</br>
+                            2009
+                        </p>
+
+                        <p>buren high school</br>
+                            matric</br>
+                            2008
+                        </p>
+                    </div>
+                    <div class="proficiencies">
+                    proficiencies
+                    </div>
+                    <div class="skills">
+                        <h5>SKILLS</h5>
+                        <p>digital layout & design</p>
+                        <p>flatbed digital printing</p>
+                        <p>front end coding (html & css) </p>
+                        <p>administration</p>
+                        <p>decision making</p>
+                        <p>problem solving</p>              
+                
+                
+                
+                </div>
+                    <div class="references">
+                    <h5>REFERENCES</h5>
+                            <p>norman von schlicht</br>
+                                <b>ultrasigns</b></br>
+                                former owner</br>
+                                <b>082 900 1135</b>
+                            </p>
+
+                            <p>stan du plooy</br>
+                                <b>ultrasigns</b></br>
+                                production manager</br>
+                                <b>066 205 4443</b>
+                            </p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                
+
+
+
+
+
+
+
+
+            </div>
+            
     </div>
+        <div class="right-section"></div>
 
 
-
-    {% include "../includes/footer.html" %}
-
-</html>
+{% endblock %}
