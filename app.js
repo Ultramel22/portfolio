@@ -15,7 +15,6 @@ const njk = expressNunjucks(app, {
     noCache: true
 });
 
-
 app.get('/', async (req, res) => {
     let instagramPosts = [];
 

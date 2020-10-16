@@ -3,7 +3,7 @@
     width: 1400px;
     height: auto;
     display: flex;
-    margin: 0 auto auto 125px;
+
 
 }
 
@@ -14,39 +14,44 @@
     display: inline-block;
     min-height: 1200px;
     max-width: 1400px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 
 }
 
 .resume p {
 
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    letter-spacing: .8px;
 
 }
 
 
 
-.resume h5 {
+.resume .left-section h5 {
 
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .8px;
     margin: 20px auto 25px;
     border: 2px solid white;
     display: inline-block;
     padding: 5px 10px;
 
-
 }
 
 .resume .left-section {
 
-    width: 350px;
+    width: 400px;
     background: #606062;
     padding-top: 120px;
+    padding: 120px 25px 80px 25px;
     
 }
 
@@ -115,6 +120,8 @@
 
 }
 
+
+
 .resume .left-section .resume-content .references p {
 
     margin: 0 0 20px 0;
@@ -122,11 +129,309 @@
 
 }
 
+.resume .left-section .resume-content .references b {
+
+    font-weight: 500;
+
+}
+
+.resume .left-section .resume-content ul {
+
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
 
 
-.resume .left-section .resume-content .skills p {
-
+.resume .left-section .resume-content .prof ul li {
+    
+    
+    color: white;
+    justify-content:space-between;
     margin: 0 0 20px 0;
     padding: 0;
+    display: flex;
+    font-size: 13px;
+
+}
+
+
+.resume .right-section .prof ul li .name {
+
+    width: 25%;
+
+}
+
+.resume .right-section .prof ul li .progress {
+
+    width: 50%;
+    margin: 0 5px;
+    height: 5px;
+    background: orange;
+    position: relative;
+    top: 10px;
+
+}
+
+
+
+.resume .right-section .prof ul li .percent {
+
+    width: 15%;
+
+}
+
+.resume .right-section .prof ul li .progress span {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: blue;
+
+
+}
+
+.resume .right-section {
+
+    padding: 120px 25px 25px;
+    width: 1000px;
+
+}
+
+
+.resume .right-section p {
+
+    color: #4b4b4d;
+    font-weight: 400;
+
+}
+
+.resume .right-section ul {
+
+    list-style-type: none;
+    text-align: left;
+
+}
+
+.resume .right-section h1 {
+
+    margin-bottom: 30px;
+
+}
+
+.resume .right-section h4 {
+
+    color: #4b4b4d;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: .5px;
+
+}
+
+.resume .right-section h5 {
+
+    color: #8c5d65;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    border: 2px solid #8c5d65;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 50px 0 20px 0;
+
+}
+
+.resume .right-section h6 {
+
+    color: #8c5d65;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    font-style: italic;
+    display: inline-block;
+    margin: 0;
+
+}
+
+
+.resume .right-section ul li .date {
+
+    color: #8c5d65;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+.resume .right-section ul li .position {
+
+    margin-bottom: 5px;
+
+}
+
+
+.resume .right-section ul li .info {
+
+    margin-bottom: 40px;
+    
+    
+}
+
+
+.resume .right-section ul li .company {
+    margin-bottom: 5px;
+}
+
+
+.resume .right-section .experience {
+
+    padding-left: 100px;
+    overflow: hidden;
+
+}
+
+.resume .right-section ul li {
+
+    position: relative;
+    margin: 5px 0;
+
+    letter-spacing:.5px;
+
+
+}
+
+.resume .right-section .experience .work>li:before {
+
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #8c5d65;
+    background-color:  #8c5d65;
+    
+
+
+}
+
+.resume .right-section .experience .work>li:after {
+
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    width: 3px;
+    height: 300px;
+    background:  #8c5d65;
+}
+
+
+.resume .right-section .experience .work>li:last-child:after {
+
+    height:250px;
+
+}
+
+
+
+
+
+.resume .right-section .experience ul li .duties {
+
+    list-style-type: none;
+    text-align: left;
+    text-transform: initial;
+    list-style: disc;
+}
+
+.resume .right-section .proficiencies-section {
+
+    width: 70%;
+    background-color:#b8b8b8;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.resume .right-section .prof .skills {
+
+text-align: right;
+padding-top: 0;
+padding-bottom: 0;
+color: white;
+border-radius: 20px;
+
+}
+
+.resume .right-section .prof .progress {
+    margin: 15px 50px 20px 0;
+    text-align: right;
+}
+
+.resume .right-section .prof p {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.resume .right-section .prof .html {
+    width: 90%;
+    background-color:#8c5d65;
+}
+
+.resume .right-section .prof .wordpress {
+    width:80%;
+    background-color: #8c5d65;
+}
+
+.resume .right-section .prof .adobe {
+    width: 60%;
+    background-color:#8c5d65;
+    
+    }
+
+.resume .right-section .prof .coreldraw {
+width: 60%;
+background-color:#8c5d65;
+
+}
+
+.resume .right-section .microsoft {
+    width: 50%;
+    background-color: #8c5d65;
+}
+
+.resume .right-section .prof .progress .skills p {
+
+    font-weight: 500;
+    color: white;
+    margin-right: 15px;
+    font-size: 15px;
+
+}
+
+
+.resume .right-section .hobbies .hobby-icons li {
+
+    display: inline-block;
+
+}
+
+.resume .right-section .hobbies .hobby-icons {
+ text-align: center;
+}
+
+.resume .right-section .hobbies .hobby-icons li img {
+    height: 100px;
+    margin: 0 20px;
 
 }
